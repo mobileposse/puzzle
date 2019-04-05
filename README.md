@@ -46,9 +46,9 @@ The list of open seats, number of rows and columns (seats) should be configurabl
 }
 ```
 
-The solution should find the best open seat  (closest to the front & middle) given the input JSON and number of requested seats. Imagine a concert, people want to be as close as possible to the stage.
+The solution should find the best open seat  (closest to the front & middle) given the input JSON and number of requested seats. Imagine a concert, people want to be as close as possible to the stage. To keep things simple, any seat in a closer row will always be preferred to a seat in a further row.
 
-For example, for a `venue` with `10 rows` and `12 columns` with all seats open, the best seat would be `A6`.
+For example, for a `venue` with `10 rows` and `12 columns` with all seats open, the best seat would be either `A6` or `A7`.
 
 If a group of seats is requested, the algorithm needs to find the best open group of seats together. In the example above, for `3 seats`, it would be `A5`, `A6`, and `A7`.
 
