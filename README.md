@@ -58,7 +58,6 @@ All results should be returned as JSON.
 
 Additional Requirements: 
 
-* Start with a single seat request (not a group of seats together)
 * The app should have automated tests
 * The app needs a `README.md` explaining the app and steps to run it locally
 * Your submission should be in a private Github repo
