@@ -70,7 +70,6 @@ Use whatever set of technologies that you are comfortable with. This is meant to
 
 If you are interested, try improving the solution by adding one or more of the following:
 
-* Expand the algorithm so that a user can request multiple seats (together)
 * Web app that shows a seat view and shows the best available seats based on the requested number of seats
 
 
