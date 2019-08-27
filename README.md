@@ -2,7 +2,8 @@
 
 ### The Evaluation
 
-We will review your submission based on the following criteria (in no particular order):
+We will review your submission based on the following criteria (in no 
+particular order):
 
 * The ability to follow instructions
 * Quality of code submission
@@ -11,9 +12,31 @@ We will review your submission based on the following criteria (in no particular
 
 ### Best Available Seat
 
-Write a REST API to return the best available seat (closest to the front & middle) given a list of open seats. Rows follow alphabetical order with `A` being the first row. Columns follow numerical order from left to right (starting with `1`).
+Write a REST API to return the best available seat (closest to the front &
+middle) given a list of open seats. Rows follow alphabetical order with 
+`A` being the first row. Columns follow numerical order from left to right
+(starting with `1`).
 
-The list of open seats, number of rows and columns (seats) should be configurable and based on a JSON input.
+```
++----------------------------------+
+|                                  |
+|            STAGE                 |
+|                                  |
++----------------------------------+
+
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
+ |A1| |A2| |A3| |A4| |A5| |A6| |A7|
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
+ |B1| |B2| |B3| |B4| |B5| |B6| |B7|
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
+ |C1| |C2| |C3| |C4| |C5| |C6| |C7|
+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ 
+```
+
+The list of open seats, number of rows and columns (seats) should be 
+configurable and based on a JSON input.
 
 ```json
 {
@@ -46,13 +69,21 @@ The list of open seats, number of rows and columns (seats) should be configurabl
 }
 ```
 
-The solution should find the best open seat  (closest to the front & middle) given the input JSON and number of requested seats. Imagine a concert, people want to be as close as possible to the stage. To keep things simple, any seat in a closer row will always be preferred to a seat in a further row.
+The solution should find the best open seat  (closest to the front & middle) 
+given the input JSON and number of requested seats. Imagine a concert, people
+want to be as close as possible to the stage. To keep things simple, any seat
+in a closer row will always be preferred to a seat in a further row.
 
-For example, for a `venue` with `10 rows` and `12 columns` with all seats open, the best seat would be either `A6` or `A7`.
+For example, for a `venue` with `10 rows` and `12 columns` with all seats open
+, the best seat would be either `A6` or `A7`.
 
-If a group of seats is requested, the algorithm needs to find the best open group of seats together. In the example above, for `3 seats`, it would be `A5`, `A6`, and `A7`.
+If a group of seats is requested, the algorithm needs to find the best open 
+group of seats together. In the example above, for `3 seats`, it would be 
+`A5`, `A6`, and `A7`.
 
-For `5 columns` and `2 requested seats` the best open seats - assuming the first row `A` is fully occupied and the second row `B` is fully open, would be `B2` and `B3`.
+For `5 columns` and `2 requested seats` the best open seats - assuming the fir
+st row `A` is fully occupied and the second row `B` is fully open, would be 
+`B2` and `B3`.
 
 All results should be returned as JSON.
 
@@ -64,12 +95,15 @@ Additional Requirements:
 
 ### Technology
 
-Use whatever set of technologies that you are comfortable with. This is meant to be a demonstration of your problem solving ability - it's not a test of how well you know a particular programming language. 
+Use whatever set of technologies that you are comfortable with. This is meant 
+to be a demonstration of your problem solving ability - it's not a test of how
+ well you know a particular programming language. 
 
 ### Extra Credit
 
-If you are interested, try improving the solution by adding one or more of the following:
+If you are interested, try improving the solution by adding one or more of the
+ following:
 
-* Web app that shows a seat view and shows the best available seats based on the requested number of seats
-
-
+* Web app that shows a seat view and shows the best available seats based on 
+  the requested number of seats
+* Deploy your application to any hosting provider.
