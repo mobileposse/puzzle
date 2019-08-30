@@ -106,4 +106,4 @@ If you are interested, try improving the solution by adding one or more of the
 
 * Web app that shows a seat view and shows the best available seats based on 
   the requested number of seats
-* Deploy your application to any hosting provider.
+* Deploy your application to any hosting provider
